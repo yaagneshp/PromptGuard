@@ -1,0 +1,5 @@
+# Runs from the same venv as the backend (backend/venv) for this MVP - see
+# docs/NOTES_PHASE4.md. Listed here for reference/reproducibility.
+streamlit
+plotly
+pandas
