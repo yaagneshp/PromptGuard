@@ -26,6 +26,15 @@ class RiskScoreOut(BaseModel):
     contextual_score: float | None
     combined_score: float
     risk_level: str
+    policy_violation: bool
+
+    model_config = {"from_attributes": True}
+
+
+class ComplianceTagOut(BaseModel):
+    category: str
+    gdpr_article: str
+    rationale: str
 
     model_config = {"from_attributes": True}
 
@@ -40,5 +49,6 @@ class EventOut(BaseModel):
     received_at: datetime.datetime
     detections: list[DetectionOut]
     risk_score: RiskScoreOut
+    compliance_tags: list[ComplianceTagOut]
 
     model_config = {"from_attributes": True}

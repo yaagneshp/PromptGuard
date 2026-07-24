@@ -1,3 +1,5 @@
+from contextlib import asynccontextmanager
+
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
@@ -5,13 +7,23 @@ from sqlalchemy.orm import Session
 from . import crud, models
 from .auth import require_api_key
 from .database import Base, engine, get_db
-from .detectors import scan_text
-from .risk import score_from_counts
-from .schemas import DetectionOut, EventOut, IngestRequest, RiskScoreOut
+from .detectors import scan_text_combined
+from .detectors.presidio_detector import get_analyzer
+from .risk import score_from_matches
+from .schemas import ComplianceTagOut, DetectionOut, EventOut, IngestRequest, RiskScoreOut
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="PromptGuard API", version="0.1.0")
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    # Loading the spaCy model takes a few seconds; do it once at startup
+    # rather than on the first request.
+    get_analyzer()
+    yield
+
+
+app = FastAPI(title="PromptGuard API", version="0.1.0", lifespan=lifespan)
 
 # Chrome extension background service workers fetch this API directly from a
 # chrome-extension:// origin, which is cross-origin as far as CORS is
@@ -41,13 +53,14 @@ def _event_to_out(event: models.Event) -> EventOut:
         received_at=event.received_at,
         detections=[DetectionOut.model_validate(d) for d in event.detections],
         risk_score=RiskScoreOut.model_validate(event.risk_score),
+        compliance_tags=[ComplianceTagOut.model_validate(t) for t in event.compliance_tags],
     )
 
 
 @app.post("/events/ingest", response_model=EventOut, dependencies=[Depends(require_api_key)])
 def ingest_event(payload: IngestRequest, db: Session = Depends(get_db)) -> EventOut:
-    scan = scan_text(payload.text)
-    risk = score_from_counts(scan.category_counts)
+    scan = scan_text_combined(payload.text)
+    risk = score_from_matches(scan.matches, payload.text)
 
     event = crud.create_event_with_scan(
         db,

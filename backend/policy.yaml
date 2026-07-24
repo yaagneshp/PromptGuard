@@ -1,0 +1,23 @@
+thresholds:
+  medium: 25
+  high: 50
+  critical: 75
+
+blocked_categories:
+  - aws_key
+  - credit_card
+  - ni_number
+  - us_ssn
+  - iban_code
+  - uk_nhs
+  - crypto
+
+allowed_platforms:
+  - chatgpt
+  - claude
+  - gemini
+  - copilot
+  - perplexity
+  - deepseek
+  - grok
+  - mistral

@@ -1,6 +1,6 @@
 import datetime
 
-from sqlalchemy import ForeignKey, String, Text, Integer, Float, DateTime, UniqueConstraint
+from sqlalchemy import ForeignKey, String, Text, Integer, Float, Boolean, DateTime, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from .database import Base
@@ -63,6 +63,9 @@ class Event(Base):
     risk_score: Mapped["RiskScore"] = relationship(
         back_populates="event", uselist=False, cascade="all, delete-orphan"
     )
+    compliance_tags: Mapped[list["ComplianceTag"]] = relationship(
+        back_populates="event", cascade="all, delete-orphan"
+    )
 
 
 class Detection(Base):
@@ -91,10 +94,26 @@ class RiskScore(Base):
     contextual_score: Mapped[float | None] = mapped_column(Float, nullable=True)
     combined_score: Mapped[float] = mapped_column(Float, default=0.0)
     risk_level: Mapped[str] = mapped_column(String(16), default="low")
+    policy_violation: Mapped[bool] = mapped_column(Boolean, default=False)
 
     created_at: Mapped[datetime.datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
     event: Mapped["Event"] = relationship(back_populates="risk_score")
 
 
-__all__ = ["User", "Platform", "Event", "Detection", "RiskScore"]
+class ComplianceTag(Base):
+    """A UK GDPR article tag derived from a detected PII category (see app/gdpr.py)."""
+
+    __tablename__ = "compliance_tags"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    event_id: Mapped[int] = mapped_column(ForeignKey("events.id"), index=True)
+
+    category: Mapped[str] = mapped_column(String(64))
+    gdpr_article: Mapped[str] = mapped_column(String(32))
+    rationale: Mapped[str] = mapped_column(String(256))
+
+    event: Mapped["Event"] = relationship(back_populates="compliance_tags")
+
+
+__all__ = ["User", "Platform", "Event", "Detection", "RiskScore", "ComplianceTag"]

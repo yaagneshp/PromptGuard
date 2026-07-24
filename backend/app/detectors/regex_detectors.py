@@ -70,6 +70,42 @@ DETECTOR_REGISTRY: list[tuple[str, re.Pattern, Optional[Callable[[str], bool]]]]
 ]
 
 
+def find_regex_matches(text: str) -> list[tuple[str, int, int]]:
+    """Returns raw (category, start, end) matches, unresolved (may overlap)."""
+    raw_matches: list[tuple[str, int, int]] = []
+    for category, pattern, validator in DETECTOR_REGISTRY:
+        for m in pattern.finditer(text):
+            if validator is not None and not validator(m.group(0)):
+                continue
+            raw_matches.append((category, m.start(), m.end()))
+    return raw_matches
+
+
+def resolve_overlaps(matches: list[tuple[str, int, int]]) -> list[tuple[str, int, int]]:
+    """Earliest start wins, ties broken by longest match."""
+    ordered = sorted(matches, key=lambda t: (t[1], -(t[2] - t[1])))
+    resolved: list[tuple[str, int, int]] = []
+    last_end = -1
+    for category, start, end in ordered:
+        if start >= last_end:
+            resolved.append((category, start, end))
+            last_end = end
+    return resolved
+
+
+def redact(text: str, resolved_matches: list[tuple[str, int, int]]) -> tuple[str, dict[str, int]]:
+    counts: dict[str, int] = {}
+    parts: list[str] = []
+    cursor = 0
+    for category, start, end in sorted(resolved_matches, key=lambda t: t[1]):
+        parts.append(text[cursor:start])
+        parts.append(f"[{category.upper()}_REDACTED]")
+        counts[category] = counts.get(category, 0) + 1
+        cursor = end
+    parts.append(text[cursor:])
+    return "".join(parts), counts
+
+
 @dataclass
 class ScanResult:
     redacted_text: str
@@ -78,39 +114,12 @@ class ScanResult:
 
 
 def scan_text(text: str) -> ScanResult:
-    """Scan text for PII, returning a redacted copy plus per-category match counts.
+    """Regex-only scan (used standalone as the Phase 5 baseline detector, and
+    as one half of the hybrid pipeline in detectors/combined.py).
 
     The original text is never returned or logged — callers should discard it
     once this function has run.
     """
-    raw_matches: list[tuple[str, int, int]] = []
-    for category, pattern, validator in DETECTOR_REGISTRY:
-        for m in pattern.finditer(text):
-            if validator is not None and not validator(m.group(0)):
-                continue
-            raw_matches.append((category, m.start(), m.end()))
-
-    # Resolve overlaps: earliest start wins, ties broken by longest match
-    raw_matches.sort(key=lambda t: (t[1], -(t[2] - t[1])))
-    resolved: list[tuple[str, int, int]] = []
-    last_end = -1
-    for category, start, end in raw_matches:
-        if start >= last_end:
-            resolved.append((category, start, end))
-            last_end = end
-
-    counts: dict[str, int] = {}
-    parts: list[str] = []
-    cursor = 0
-    for category, start, end in resolved:
-        parts.append(text[cursor:start])
-        parts.append(f"[{category.upper()}_REDACTED]")
-        counts[category] = counts.get(category, 0) + 1
-        cursor = end
-    parts.append(text[cursor:])
-
-    return ScanResult(
-        redacted_text="".join(parts),
-        category_counts=counts,
-        raw_char_count=len(text),
-    )
+    resolved = resolve_overlaps(find_regex_matches(text))
+    redacted_text, counts = redact(text, resolved)
+    return ScanResult(redacted_text=redacted_text, category_counts=counts, raw_char_count=len(text))
