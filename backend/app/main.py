@@ -1,4 +1,5 @@
 from fastapi import Depends, FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from . import crud, models
@@ -11,6 +12,17 @@ from .schemas import DetectionOut, EventOut, IngestRequest, RiskScoreOut
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="PromptGuard API", version="0.1.0")
+
+# Chrome extension background service workers fetch this API directly from a
+# chrome-extension:// origin, which is cross-origin as far as CORS is
+# concerned. Wide open for MVP/local-demo purposes; tighten allow_origins to
+# the specific chrome-extension://<id> before any real deployment.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type", "X-API-Key"],
+)
 
 
 @app.get("/health")
