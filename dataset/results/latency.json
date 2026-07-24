@@ -1,0 +1,16 @@
+{
+  "regex_only": {
+    "mean_ms": 0.067,
+    "median_ms": 0.058,
+    "p95_ms": 0.126,
+    "min_ms": 0.033,
+    "max_ms": 0.311
+  },
+  "hybrid": {
+    "mean_ms": 15.501,
+    "median_ms": 14.828,
+    "p95_ms": 19.825,
+    "min_ms": 11.105,
+    "max_ms": 47.671
+  }
+}

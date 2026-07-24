@@ -1,0 +1,368 @@
+{"id": 1, "text": "Write a poem about the ocean.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 2, "text": "Write a poem about autumn leaves.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 3, "text": "Write a poem about climate change.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 4, "text": "Write a poem about machine learning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 5, "text": "Write a poem about the history of Rome.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 6, "text": "Write a poem about cooking pasta.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 7, "text": "Write a poem about quantum computing.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 8, "text": "Write a poem about gardening tips.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 9, "text": "Write a poem about the solar system.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 10, "text": "Write a poem about medieval castles.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 11, "text": "Write a poem about the French Revolution.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 12, "text": "Write a poem about renewable energy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 13, "text": "Write a poem about chess strategy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 14, "text": "Write a poem about the water cycle.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 15, "text": "Write a poem about ancient Egypt.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 16, "text": "Write a poem about urban planning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 17, "text": "Write a poem about jazz music.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 18, "text": "Write a poem about the stock market.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 19, "text": "Write a poem about coral reefs.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 20, "text": "Write a poem about volcanoes.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 21, "text": "Explain the ocean to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 22, "text": "Explain autumn leaves to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 23, "text": "Explain climate change to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 24, "text": "Explain machine learning to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 25, "text": "Explain the history of Rome to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 26, "text": "Explain cooking pasta to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 27, "text": "Explain quantum computing to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 28, "text": "Explain gardening tips to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 29, "text": "Explain the solar system to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 30, "text": "Explain medieval castles to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 31, "text": "Explain the French Revolution to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 32, "text": "Explain renewable energy to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 33, "text": "Explain chess strategy to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 34, "text": "Explain the water cycle to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 35, "text": "Explain ancient Egypt to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 36, "text": "Explain urban planning to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 37, "text": "Explain jazz music to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 38, "text": "Explain the stock market to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 39, "text": "Explain coral reefs to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 40, "text": "Explain volcanoes to a five-year-old.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 41, "text": "Summarise the key facts about the ocean.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 42, "text": "Summarise the key facts about autumn leaves.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 43, "text": "Summarise the key facts about climate change.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 44, "text": "Summarise the key facts about machine learning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 45, "text": "Summarise the key facts about the history of Rome.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 46, "text": "Summarise the key facts about cooking pasta.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 47, "text": "Summarise the key facts about quantum computing.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 48, "text": "Summarise the key facts about gardening tips.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 49, "text": "Summarise the key facts about the solar system.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 50, "text": "Summarise the key facts about medieval castles.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 51, "text": "Summarise the key facts about the French Revolution.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 52, "text": "Summarise the key facts about renewable energy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 53, "text": "Summarise the key facts about chess strategy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 54, "text": "Summarise the key facts about the water cycle.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 55, "text": "Summarise the key facts about ancient Egypt.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 56, "text": "Summarise the key facts about urban planning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 57, "text": "Summarise the key facts about jazz music.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 58, "text": "Summarise the key facts about the stock market.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 59, "text": "Summarise the key facts about coral reefs.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 60, "text": "Summarise the key facts about volcanoes.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 61, "text": "Give me five interesting facts about the ocean.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 62, "text": "Give me five interesting facts about autumn leaves.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 63, "text": "Give me five interesting facts about climate change.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 64, "text": "Give me five interesting facts about machine learning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 65, "text": "Give me five interesting facts about the history of Rome.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 66, "text": "Give me five interesting facts about cooking pasta.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 67, "text": "Give me five interesting facts about quantum computing.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 68, "text": "Give me five interesting facts about gardening tips.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 69, "text": "Give me five interesting facts about the solar system.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 70, "text": "Give me five interesting facts about medieval castles.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 71, "text": "Give me five interesting facts about the French Revolution.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 72, "text": "Give me five interesting facts about renewable energy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 73, "text": "Give me five interesting facts about chess strategy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 74, "text": "Give me five interesting facts about the water cycle.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 75, "text": "Give me five interesting facts about ancient Egypt.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 76, "text": "Give me five interesting facts about urban planning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 77, "text": "Give me five interesting facts about jazz music.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 78, "text": "Give me five interesting facts about the stock market.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 79, "text": "Give me five interesting facts about coral reefs.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 80, "text": "Give me five interesting facts about volcanoes.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 81, "text": "Draft an outline for an essay on the ocean.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 82, "text": "Draft an outline for an essay on autumn leaves.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 83, "text": "Draft an outline for an essay on climate change.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 84, "text": "Draft an outline for an essay on machine learning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 85, "text": "Draft an outline for an essay on the history of Rome.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 86, "text": "Draft an outline for an essay on cooking pasta.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 87, "text": "Draft an outline for an essay on quantum computing.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 88, "text": "Draft an outline for an essay on gardening tips.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 89, "text": "Draft an outline for an essay on the solar system.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 90, "text": "Draft an outline for an essay on medieval castles.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 91, "text": "Draft an outline for an essay on the French Revolution.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 92, "text": "Draft an outline for an essay on renewable energy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 93, "text": "Draft an outline for an essay on chess strategy.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 94, "text": "Draft an outline for an essay on the water cycle.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 95, "text": "Draft an outline for an essay on ancient Egypt.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 96, "text": "Draft an outline for an essay on urban planning.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 97, "text": "Draft an outline for an essay on jazz music.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 98, "text": "Draft an outline for an essay on the stock market.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 99, "text": "Draft an outline for an essay on coral reefs.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 100, "text": "Draft an outline for an essay on volcanoes.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 101, "text": "Random 16 digit reference number 1234567890123456, thanks.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 102, "text": "Please call my US office at +1 415 555 0132 tomorrow.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 103, "text": "The transaction ID is 550e8400-e29b-41d4-a716-446655440000.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 104, "text": "There are 42 items left in stock for the autumn sale.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 105, "text": "Order number 20260724-001 has shipped.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 106, "text": "The meeting is scheduled for 15:30 on Thursday.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 107, "text": "Our reference is INV-2026-0042 for the invoice.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 108, "text": "The product SKU is 987654321012 for the warehouse.", "label": "benign", "expected_categories": [], "expected_policy_violation": false}
+{"id": 109, "text": "My email is alice@example.com, can you help draft a reply about the ocean?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 110, "text": "Call me on 07700 900123 about the ocean.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 111, "text": "My colleague John Smith from London needs help with the ocean.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 112, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding the ocean.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 113, "text": "The server IP is 192.0.2.10 for the the ocean project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 114, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the the ocean results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 115, "text": "She identifies as Buddhist and volunteers for the ocean events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 116, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the the ocean review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 117, "text": "My email is carol.smith@example.org, can you help draft a reply about autumn leaves?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 118, "text": "Call me on 07700 900456 about autumn leaves.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 119, "text": "My colleague Richard Roe from Manchester needs help with autumn leaves.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 120, "text": "Reach out to Sarah Connor at dave@example.net regarding autumn leaves.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 121, "text": "The server IP is 198.51.100.23 for the autumn leaves project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 122, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the autumn leaves results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 123, "text": "She is a British national and volunteers for autumn leaves events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 124, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the autumn leaves review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 125, "text": "My email is alice@example.com, can you help draft a reply about climate change?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 126, "text": "Call me on 020 7946 0958 about climate change.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 127, "text": "My colleague John Smith from Bristol needs help with climate change.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 128, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding climate change.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 129, "text": "The server IP is 203.0.113.45 for the climate change project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 130, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the climate change results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 131, "text": "She is a member of the Green Party and volunteers for climate change events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 132, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the climate change review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 133, "text": "My email is carol.smith@example.org, can you help draft a reply about machine learning?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 134, "text": "Call me on 0113 496 0101 about machine learning.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 135, "text": "My colleague Richard Roe from Leeds needs help with machine learning.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 136, "text": "Reach out to Sarah Connor at dave@example.net regarding machine learning.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 137, "text": "The server IP is 192.0.2.10 for the machine learning project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 138, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the machine learning results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 139, "text": "She identifies as Buddhist and volunteers for machine learning events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 140, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the machine learning review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 141, "text": "My email is alice@example.com, can you help draft a reply about the history of Rome?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 142, "text": "Call me on 07700 900123 about the history of Rome.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 143, "text": "My colleague John Smith from Edinburgh needs help with the history of Rome.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 144, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding the history of Rome.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 145, "text": "The server IP is 198.51.100.23 for the the history of Rome project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 146, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the the history of Rome results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 147, "text": "She is a British national and volunteers for the history of Rome events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 148, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the the history of Rome review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 149, "text": "My email is carol.smith@example.org, can you help draft a reply about cooking pasta?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 150, "text": "Call me on 07700 900456 about cooking pasta.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 151, "text": "My colleague Richard Roe from Cardiff needs help with cooking pasta.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 152, "text": "Reach out to Sarah Connor at dave@example.net regarding cooking pasta.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 153, "text": "The server IP is 203.0.113.45 for the cooking pasta project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 154, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the cooking pasta results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 155, "text": "She is a member of the Green Party and volunteers for cooking pasta events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 156, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the cooking pasta review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 157, "text": "My email is alice@example.com, can you help draft a reply about quantum computing?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 158, "text": "Call me on 020 7946 0958 about quantum computing.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 159, "text": "My colleague John Smith from London needs help with quantum computing.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 160, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding quantum computing.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 161, "text": "The server IP is 192.0.2.10 for the quantum computing project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 162, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the quantum computing results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 163, "text": "She identifies as Buddhist and volunteers for quantum computing events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 164, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the quantum computing review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 165, "text": "My email is carol.smith@example.org, can you help draft a reply about gardening tips?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 166, "text": "Call me on 0113 496 0101 about gardening tips.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 167, "text": "My colleague Richard Roe from Manchester needs help with gardening tips.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 168, "text": "Reach out to Sarah Connor at dave@example.net regarding gardening tips.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 169, "text": "The server IP is 198.51.100.23 for the gardening tips project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 170, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the gardening tips results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 171, "text": "She is a British national and volunteers for gardening tips events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 172, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the gardening tips review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 173, "text": "My email is alice@example.com, can you help draft a reply about the solar system?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 174, "text": "Call me on 07700 900123 about the solar system.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 175, "text": "My colleague John Smith from Bristol needs help with the solar system.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 176, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding the solar system.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 177, "text": "The server IP is 203.0.113.45 for the the solar system project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 178, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the the solar system results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 179, "text": "She is a member of the Green Party and volunteers for the solar system events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 180, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the the solar system review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 181, "text": "My email is carol.smith@example.org, can you help draft a reply about medieval castles?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 182, "text": "Call me on 07700 900456 about medieval castles.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 183, "text": "My colleague Richard Roe from Leeds needs help with medieval castles.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 184, "text": "Reach out to Sarah Connor at dave@example.net regarding medieval castles.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 185, "text": "The server IP is 192.0.2.10 for the medieval castles project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 186, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the medieval castles results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 187, "text": "She identifies as Buddhist and volunteers for medieval castles events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 188, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the medieval castles review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 189, "text": "My email is alice@example.com, can you help draft a reply about the French Revolution?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 190, "text": "Call me on 020 7946 0958 about the French Revolution.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 191, "text": "My colleague John Smith from Edinburgh needs help with the French Revolution.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 192, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding the French Revolution.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 193, "text": "The server IP is 198.51.100.23 for the the French Revolution project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 194, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the the French Revolution results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 195, "text": "She is a British national and volunteers for the French Revolution events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 196, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the the French Revolution review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 197, "text": "My email is carol.smith@example.org, can you help draft a reply about renewable energy?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 198, "text": "Call me on 0113 496 0101 about renewable energy.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 199, "text": "My colleague Richard Roe from Cardiff needs help with renewable energy.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 200, "text": "Reach out to Sarah Connor at dave@example.net regarding renewable energy.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 201, "text": "The server IP is 203.0.113.45 for the renewable energy project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 202, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the renewable energy results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 203, "text": "She is a member of the Green Party and volunteers for renewable energy events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 204, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the renewable energy review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 205, "text": "My email is alice@example.com, can you help draft a reply about chess strategy?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 206, "text": "Call me on 07700 900123 about chess strategy.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 207, "text": "My colleague John Smith from London needs help with chess strategy.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 208, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding chess strategy.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 209, "text": "The server IP is 192.0.2.10 for the chess strategy project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 210, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the chess strategy results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 211, "text": "She identifies as Buddhist and volunteers for chess strategy events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 212, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the chess strategy review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 213, "text": "My email is carol.smith@example.org, can you help draft a reply about the water cycle?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 214, "text": "Call me on 07700 900456 about the water cycle.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 215, "text": "My colleague Richard Roe from Manchester needs help with the water cycle.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 216, "text": "Reach out to Sarah Connor at dave@example.net regarding the water cycle.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 217, "text": "The server IP is 198.51.100.23 for the the water cycle project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 218, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the the water cycle results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 219, "text": "She is a British national and volunteers for the water cycle events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 220, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the the water cycle review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 221, "text": "My email is alice@example.com, can you help draft a reply about ancient Egypt?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 222, "text": "Call me on 020 7946 0958 about ancient Egypt.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 223, "text": "My colleague John Smith from Bristol needs help with ancient Egypt.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 224, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding ancient Egypt.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 225, "text": "The server IP is 203.0.113.45 for the ancient Egypt project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 226, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the ancient Egypt results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 227, "text": "She is a member of the Green Party and volunteers for ancient Egypt events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 228, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the ancient Egypt review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 229, "text": "My email is carol.smith@example.org, can you help draft a reply about urban planning?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 230, "text": "Call me on 0113 496 0101 about urban planning.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 231, "text": "My colleague Richard Roe from Leeds needs help with urban planning.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 232, "text": "Reach out to Sarah Connor at dave@example.net regarding urban planning.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 233, "text": "The server IP is 192.0.2.10 for the urban planning project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 234, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the urban planning results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 235, "text": "She identifies as Buddhist and volunteers for urban planning events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 236, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the urban planning review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 237, "text": "My email is alice@example.com, can you help draft a reply about jazz music?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 238, "text": "Call me on 07700 900123 about jazz music.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 239, "text": "My colleague John Smith from Edinburgh needs help with jazz music.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 240, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding jazz music.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 241, "text": "The server IP is 198.51.100.23 for the jazz music project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 242, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the jazz music results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 243, "text": "She is a British national and volunteers for jazz music events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 244, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the jazz music review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 245, "text": "My email is carol.smith@example.org, can you help draft a reply about the stock market?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 246, "text": "Call me on 07700 900456 about the stock market.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 247, "text": "My colleague Richard Roe from Cardiff needs help with the stock market.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 248, "text": "Reach out to Sarah Connor at dave@example.net regarding the stock market.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 249, "text": "The server IP is 203.0.113.45 for the the stock market project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 250, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the the stock market results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 251, "text": "She is a member of the Green Party and volunteers for the stock market events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 252, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the the stock market review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 253, "text": "My email is alice@example.com, can you help draft a reply about coral reefs?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 254, "text": "Call me on 020 7946 0958 about coral reefs.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 255, "text": "My colleague John Smith from London needs help with coral reefs.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 256, "text": "Reach out to Jane Doe at bob.jones@example.co.uk regarding coral reefs.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 257, "text": "The server IP is 192.0.2.10 for the coral reefs project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 258, "text": "Here's the link, https://app.example.com/data?token=abc123XYZ, for the coral reefs results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 259, "text": "She identifies as Buddhist and volunteers for coral reefs events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 260, "text": "Dr. Jane Roe's medical license number is MD123456, please verify for the coral reefs review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 261, "text": "My email is carol.smith@example.org, can you help draft a reply about volcanoes?", "label": "confidential", "expected_categories": ["email"], "expected_policy_violation": false}
+{"id": 262, "text": "Call me on 0113 496 0101 about volcanoes.", "label": "confidential", "expected_categories": ["uk_phone"], "expected_policy_violation": false}
+{"id": 263, "text": "My colleague Richard Roe from Manchester needs help with volcanoes.", "label": "confidential", "expected_categories": ["location", "person"], "expected_policy_violation": false}
+{"id": 264, "text": "Reach out to Sarah Connor at dave@example.net regarding volcanoes.", "label": "confidential", "expected_categories": ["email", "person"], "expected_policy_violation": false}
+{"id": 265, "text": "The server IP is 198.51.100.23 for the volcanoes project.", "label": "confidential", "expected_categories": ["ip_address"], "expected_policy_violation": false}
+{"id": 266, "text": "Here's the link, https://portal.example.org/view?access_token=zzz999AAA, for the volcanoes results.", "label": "confidential", "expected_categories": ["token_url"], "expected_policy_violation": false}
+{"id": 267, "text": "She is a British national and volunteers for volcanoes events.", "label": "confidential", "expected_categories": ["nrp"], "expected_policy_violation": false}
+{"id": 268, "text": "Dr. John Roe's medical license number is GMC7654321, please verify for the volcanoes review.", "label": "confidential", "expected_categories": ["person"], "expected_policy_violation": false}
+{"id": 269, "text": "My card number is 4111111111111111, please check the the ocean charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 270, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the the ocean deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 271, "text": "My National Insurance number is AB123456C for the the ocean form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 272, "text": "Patient John Smith, NHS number 943 476 5919, needs a the ocean follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 273, "text": "My SSN is 923-45-6789 for the the ocean application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 274, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the the ocean payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 275, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the the ocean purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 276, "text": "My card number is 5555555555554444, please check the autumn leaves charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 277, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the autumn leaves deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 278, "text": "My National Insurance number is JM772311B for the autumn leaves form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 279, "text": "Patient Jane Doe, NHS number 943 476 5919, needs a autumn leaves follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 280, "text": "My SSN is 987-65-4321 for the autumn leaves application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 281, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the autumn leaves payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 282, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the autumn leaves purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 283, "text": "My card number is 378282246310005, please check the climate change charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 284, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the climate change deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 285, "text": "My National Insurance number is SN458213A for the climate change form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 286, "text": "Patient Jane Roe, NHS number 943 476 5919, needs a climate change follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 287, "text": "My SSN is 923-45-6789 for the climate change application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 288, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the climate change payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 289, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the climate change purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 290, "text": "My card number is 4012888888881881, please check the machine learning charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 291, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the machine learning deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 292, "text": "My National Insurance number is AB123456C for the machine learning form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 293, "text": "Patient Richard Roe, NHS number 943 476 5919, needs a machine learning follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 294, "text": "My SSN is 987-65-4321 for the machine learning application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 295, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the machine learning payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 296, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the machine learning purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 297, "text": "My card number is 4111111111111111, please check the the history of Rome charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 298, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the the history of Rome deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 299, "text": "My National Insurance number is JM772311B for the the history of Rome form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 300, "text": "Patient Sarah Connor, NHS number 943 476 5919, needs a the history of Rome follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 301, "text": "My SSN is 923-45-6789 for the the history of Rome application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 302, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the the history of Rome payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 303, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the the history of Rome purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 304, "text": "My card number is 5555555555554444, please check the cooking pasta charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 305, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the cooking pasta deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 306, "text": "My National Insurance number is SN458213A for the cooking pasta form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 307, "text": "Patient John Roe, NHS number 943 476 5919, needs a cooking pasta follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 308, "text": "My SSN is 987-65-4321 for the cooking pasta application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 309, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the cooking pasta payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 310, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the cooking pasta purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 311, "text": "My card number is 378282246310005, please check the quantum computing charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 312, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the quantum computing deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 313, "text": "My National Insurance number is AB123456C for the quantum computing form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 314, "text": "Patient John Smith, NHS number 943 476 5919, needs a quantum computing follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 315, "text": "My SSN is 923-45-6789 for the quantum computing application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 316, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the quantum computing payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 317, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the quantum computing purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 318, "text": "My card number is 4012888888881881, please check the gardening tips charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 319, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the gardening tips deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 320, "text": "My National Insurance number is JM772311B for the gardening tips form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 321, "text": "Patient Jane Doe, NHS number 943 476 5919, needs a gardening tips follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 322, "text": "My SSN is 987-65-4321 for the gardening tips application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 323, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the gardening tips payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 324, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the gardening tips purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 325, "text": "My card number is 4111111111111111, please check the the solar system charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 326, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the the solar system deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 327, "text": "My National Insurance number is SN458213A for the the solar system form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 328, "text": "Patient Jane Roe, NHS number 943 476 5919, needs a the solar system follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 329, "text": "My SSN is 923-45-6789 for the the solar system application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 330, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the the solar system payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 331, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the the solar system purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 332, "text": "My card number is 5555555555554444, please check the medieval castles charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 333, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the medieval castles deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 334, "text": "My National Insurance number is AB123456C for the medieval castles form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 335, "text": "Patient Richard Roe, NHS number 943 476 5919, needs a medieval castles follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 336, "text": "My SSN is 987-65-4321 for the medieval castles application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 337, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the medieval castles payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 338, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the medieval castles purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 339, "text": "My card number is 378282246310005, please check the the French Revolution charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 340, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the the French Revolution deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 341, "text": "My National Insurance number is JM772311B for the the French Revolution form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 342, "text": "Patient Sarah Connor, NHS number 943 476 5919, needs a the French Revolution follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 343, "text": "My SSN is 923-45-6789 for the the French Revolution application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 344, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the the French Revolution payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 345, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the the French Revolution purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 346, "text": "My card number is 4012888888881881, please check the renewable energy charge.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 347, "text": "Here is my AWS key AKIAIOSFODNN7EXAMPLE for the renewable energy deployment script.", "label": "policy_violating", "expected_categories": ["aws_key"], "expected_policy_violation": true}
+{"id": 348, "text": "My National Insurance number is SN458213A for the renewable energy form.", "label": "policy_violating", "expected_categories": ["ni_number"], "expected_policy_violation": true}
+{"id": 349, "text": "Patient John Roe, NHS number 943 476 5919, needs a renewable energy follow-up.", "label": "policy_violating", "expected_categories": ["person", "uk_nhs"], "expected_policy_violation": true}
+{"id": 350, "text": "My SSN is 987-65-4321 for the renewable energy application.", "label": "policy_violating", "expected_categories": ["us_ssn"], "expected_policy_violation": true}
+{"id": 351, "text": "Transfer to IBAN GB82 WEST 1234 5698 7654 32 for the renewable energy payment.", "label": "policy_violating", "expected_categories": ["iban_code"], "expected_policy_violation": true}
+{"id": 352, "text": "Send funds to wallet 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa for the renewable energy purchase.", "label": "policy_violating", "expected_categories": ["crypto"], "expected_policy_violation": true}
+{"id": 353, "text": "This is confidential, do not share: my card is 4111111111111111 for the the ocean refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 354, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number AB123456C for the the ocean handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
+{"id": 355, "text": "This is confidential, do not share: my card is 5555555555554444 for the autumn leaves refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 356, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number JM772311B for the autumn leaves handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
+{"id": 357, "text": "This is confidential, do not share: my card is 378282246310005 for the climate change refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 358, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number SN458213A for the climate change handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
+{"id": 359, "text": "This is confidential, do not share: my card is 4012888888881881 for the machine learning refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 360, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number AB123456C for the machine learning handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
+{"id": 361, "text": "This is confidential, do not share: my card is 4111111111111111 for the the history of Rome refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 362, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number JM772311B for the the history of Rome handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
+{"id": 363, "text": "This is confidential, do not share: my card is 5555555555554444 for the cooking pasta refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 364, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number SN458213A for the cooking pasta handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
+{"id": 365, "text": "This is confidential, do not share: my card is 378282246310005 for the quantum computing refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 366, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number AB123456C for the quantum computing handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
+{"id": 367, "text": "This is confidential, do not share: my card is 4012888888881881 for the gardening tips refund.", "label": "policy_violating", "expected_categories": ["credit_card"], "expected_policy_violation": true}
+{"id": 368, "text": "Under NDA - AWS key AKIAIOSFODNN7EXAMPLE and NI number JM772311B for the gardening tips handover.", "label": "policy_violating", "expected_categories": ["aws_key", "ni_number"], "expected_policy_violation": true}
