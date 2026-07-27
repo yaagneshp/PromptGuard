@@ -126,21 +126,17 @@ trade-off worth stating plainly rather than hiding: the hybrid approach
 buys detection quality at a measurable (if small in absolute terms)
 latency cost.
 
-## What's still outstanding before feature freeze
+## Real-platform testing — completed
 
-Two items from the original Phase 5 plan couldn't be completed without
-your involvement, same limitation as Phase 2:
+The two items that required your own logged-in Chrome session (real-DOM
+capture across all 8 platforms, and extension CPU/memory profiling via
+Chrome's task manager — see `docs/TESTING_GUIDE.md`) have now been run
+manually and confirmed working. Specific per-platform notes or resource-usage
+figures weren't captured verbatim in this file — if the dissertation's
+evaluation chapter wants that level of detail (e.g. a per-platform pass/fail
+table, or idle-vs-active memory numbers), those are worth writing down from
+memory while the testing session is still fresh, or re-running the relevant
+`TESTING_GUIDE.md` steps once more with figures noted this time.
 
-- **"Run full end-to-end tests across all 8 platforms, fix integration
-  bugs"** — still requires loading the unpacked extension in your own
-  logged-in Chrome and testing against the real ChatGPT/Claude/Gemini/
-  Copilot/Perplexity/DeepSeek/Grok/Mistral UIs. Everything testable without
-  your login (capture-engine logic, backend integration, detection
-  pipeline, dashboard) has been verified; the real-DOM pass is the one
-  remaining gap.
-- **Extension CPU/memory profiling** — requires Chrome's own task manager
-  or a profiler attached to your real browser session; not something
-  reachable from this side.
-
-Once you've done the real-platform pass, this is a reasonable point for
-the "feature freeze - bug fixes only" the original plan calls for.
+This closes out the "feature freeze — bug fixes only" point the original
+Phase 5 plan calls for.
