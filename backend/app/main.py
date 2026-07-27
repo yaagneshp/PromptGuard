@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 
 from . import crud, models
 from .auth import require_api_key
+from .config import settings
 from .database import Base, engine, get_db
 from .detectors import scan_text_combined
 from .detectors.presidio_detector import get_analyzer
@@ -25,13 +26,14 @@ async def lifespan(_app: FastAPI):
 
 app = FastAPI(title="PromptGuard API", version="0.1.0", lifespan=lifespan)
 
-# Chrome extension background service workers fetch this API directly from a
-# chrome-extension:// origin, which is cross-origin as far as CORS is
-# concerned. Wide open for MVP/local-demo purposes; tighten allow_origins to
-# the specific chrome-extension://<id> before any real deployment.
+# The Chrome extension's background service worker fetch bypasses page-level
+# CORS entirely (MV3 background workers with host_permissions aren't subject
+# to it), so this middleware only gates browser-context requests - e.g. a web
+# page's own JS calling the API directly. No origins are allowed by default;
+# set ALLOWED_ORIGINS in .env (comma-separated) if you need that.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=settings.allowed_origins_list,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "X-API-Key"],
 )

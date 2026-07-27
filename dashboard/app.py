@@ -2,10 +2,13 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from auth import require_password
 from colors import PLATFORM_COLORS, PLATFORM_ORDER, RISK_LEVEL_ORDER, SEQUENTIAL_BLUE, STATUS_COLORS
 from db import load_compliance_tags, load_detections, load_events
 
 st.set_page_config(page_title="PromptGuard Dashboard", layout="wide")
+require_password()
+
 st.title("PromptGuard Dashboard")
 
 

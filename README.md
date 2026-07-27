@@ -67,6 +67,15 @@ Full methodology, false-positive analysis, and threshold-calibration
 discussion in [docs/NOTES_PHASE5.md](docs/NOTES_PHASE5.md); raw results and
 charts in `dataset/results/`.
 
+## Security of the tool itself
+
+Detecting sensitive data and being securely built are different questions —
+[docs/NOTES_SECURITY.md](docs/NOTES_SECURITY.md) covers a dedicated review of
+the latter: a dependency CVE scan (clean), a timing-attack fix in the API
+key check, closing the dashboard's previously-nonexistent authentication,
+and tightening CORS from a wide-open wildcard to an explicit allowlist —
+plus what was deliberately left out of scope (rate limiting, TLS) and why.
+
 ## Key design decisions worth knowing before reading the code
 
 - **No raw prompt text is ever persisted** — only a redacted copy plus a
