@@ -1,0 +1,50 @@
+name: Security scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  python-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install backend dependencies + scanners
+        run: |
+          pip install -r backend/requirements.txt
+          pip install pip-audit bandit
+
+      - name: pip-audit (dependency CVEs)
+        # Audits the installed environment directly rather than resolving
+        # from the requirements file - much faster and avoids pip-audit's
+        # own resolver re-downloading everything (including the ~580MB
+        # spaCy model) just to determine versions.
+        run: pip-audit
+
+      - name: Bandit (static analysis)
+        run: bandit -r backend/app
+
+  extension-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install extension test dependencies
+        working-directory: extension/tests
+        run: npm ci
+
+      - name: npm audit
+        working-directory: extension/tests
+        run: npm audit --audit-level=moderate

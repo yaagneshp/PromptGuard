@@ -61,14 +61,84 @@ explicitly added to `ALLOWED_ORIGINS`. Verified via a simulated
 `Access-Control-Allow-Origin` header comes back post-fix (previously
 it echoed `*`).
 
+## Round 2 — static analysis + remaining gaps
+
+Prompted by asking "what other security issues are left" after round 1.
+Ran actual tools rather than speculating further:
+
+**Bandit** (static analysis, `bandit -r backend/app`) found exactly one
+issue: `[B105:hardcoded_password_string]` on `"token_url": 25` in
+`risk.py`'s category-weight dictionary. This is a false positive — Bandit's
+heuristic flags any dict key containing the substring "token" as a possible
+hardcoded credential, and this is a PII-category severity weight, not a
+secret. Recorded here deliberately: a static analyzer's output still needs
+human judgement, not blind fixing (or blind dismissal) of every finding —
+a legitimate methodology point for a security dissertation.
+
+**npm audit** (`extension/tests`, the jsdom-based test dependencies): 0
+vulnerabilities.
+
+**Fixes applied:**
+
+- **No input length limits.** `IngestRequest` (`backend/app/schemas.py`) had
+  no `max_length` on `text`, `platform`, or `external_user_id` — a single
+  oversized request could tie up the Presidio/spaCy pipeline without needing
+  repeated requests. Added `max_length=50_000` on `text` (generous for any
+  realistic single prompt, bounds worst-case NER cost), `max_length=128`/`64`
+  matching the DB column widths on the two ID fields, plus a
+  `[A-Za-z0-9_-]+` charset pattern on both to reject malformed/oversized
+  identifiers outright. Verified: a 60,000-char payload is now rejected with
+  `422 String should have at most 50000 characters`.
+- **No rate limiting.** Added per-IP limiting via `slowapi`
+  (`backend/app/ratelimit.py`): 30/minute on `/events/ingest`, 60/minute on
+  `GET /events`. This also throttles brute-force API-key guessing, since a
+  failed auth attempt still counts against the same per-IP limit. Verified
+  by sending 35 requests in a burst: the first 30 return `200`, the rest
+  `429`.
+- **No visibility into failed auth attempts.** `require_api_key` now logs a
+  warning (`logger.warning(...)`, includes the client IP) on every rejected
+  key, rather than failing silently.
+- **No security response headers.** Added `X-Content-Type-Options: nosniff`,
+  `X-Frame-Options: DENY`, `Referrer-Policy: no-referrer` via a small
+  middleware in `main.py`. Low-priority for a pure JSON API (nothing here
+  serves HTML), but cheap and standard practice — verified present via
+  `curl -i`.
+- **Dashboard had no brute-force protection or session expiry.**
+  `dashboard/auth.py` now locks out for 30s after 5 failed password attempts,
+  and expires an authenticated session after 30 minutes idle. Verified
+  in-browser end-to-end: 5 wrong passwords → "Too many failed attempts, try
+  again in 30s" → correct password rejected while still locked → correct
+  password accepted once the cooldown passed, full dashboard access
+  restored. This is still a single-shared-password gate, not a hardened
+  login system — a sufficiently patient attacker can wait out repeated 30s
+  cooldowns indefinitely; a production system would want IP-based backoff
+  or account lockout with alerting instead.
+- **No file-level protection on the SQLite database.** Added an
+  owner-only-read/write `os.chmod` call on connect (`backend/app/database.py`).
+  **This is a partial, POSIX-only mitigation, not encryption at rest** — on
+  Windows (this project's actual dev environment) `os.chmod` has no
+  equivalent effect and this line is a no-op there. Full encryption at rest
+  (e.g. SQLCipher) was evaluated and deliberately not implemented: it adds a
+  native-binary dependency with known Windows wheel fragility, and — more
+  fundamentally — introduces its own key-management problem (the encryption
+  key becomes an equally-sensitive secret needing its own storage story, no
+  better than the problem it's solving) that isn't proportionate to this
+  MVP's actual threat model of a single local developer machine, not a
+  multi-tenant server. This tradeoff, not a silent gap, is the point worth
+  making in the dissertation.
+- **No automated re-scanning.** Added
+  `.github/workflows/security-scan.yml`: runs `pip-audit` + `bandit` against
+  the backend and `npm audit` against the extension's test dependencies on
+  every push/PR to `main`. **Caveat, stated plainly: this hasn't been
+  observed running successfully on GitHub's actual runners** — I can't
+  trigger or watch an Actions run from this environment, only push the
+  workflow file and verify its logic manually (confirmed the underlying
+  `pip-audit`/`bandit`/`npm audit` commands work correctly when run locally
+  in this session). Check the Actions tab on first push to confirm it's
+  green.
+
 ## Deliberately not fixed (documented, not silently ignored)
 
-- **No rate limiting / request size limits** on `/events/ingest`. Unbounded
-  text into the Presidio/spaCy pipeline is a real resource-exhaustion vector
-  for a genuinely adversarial deployment. Out of scope for this pass — the
-  regex layer itself was checked for catastrophic-backtracking patterns
-  (none of the patterns use nested unbounded quantifiers) and is not a
-  concern, but the NLP layer's cost scales with input size with no cap.
 - **No TLS anywhere.** Acceptable for the current loopback-only local-demo
   deployment (traffic never leaves the machine); a real gap the moment
   either the backend or dashboard is ever exposed beyond `127.0.0.1`. The
@@ -77,6 +147,15 @@ it echoed `*`).
 - **Single shared API key / password, no rotation, no per-user credentials.**
   Consistent with the single-user MVP scope agreed at project start; a real
   multi-user or production deployment would need proper per-user auth.
+- **`external_user_id` is client-supplied and unauthenticated.** Anyone with
+  a valid API key can attribute an event to any user ID they choose — not an
+  access-control hole (the key is still required), but a data-integrity/
+  non-repudiation gap for a tool whose value depends on trustworthy per-user
+  attribution. Mitigated only partially by the new format/length validation
+  above; a real fix needs per-user credentials, which is the same
+  single-user-MVP scope tradeoff as the point above.
+- **No full encryption at rest.** See the SQLite file-permissions entry
+  above for the reasoning.
 
 ## What was already solid before this pass
 

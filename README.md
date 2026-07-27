@@ -71,10 +71,15 @@ charts in `dataset/results/`.
 
 Detecting sensitive data and being securely built are different questions —
 [docs/NOTES_SECURITY.md](docs/NOTES_SECURITY.md) covers a dedicated review of
-the latter: a dependency CVE scan (clean), a timing-attack fix in the API
-key check, closing the dashboard's previously-nonexistent authentication,
-and tightening CORS from a wide-open wildcard to an explicit allowlist —
-plus what was deliberately left out of scope (rate limiting, TLS) and why.
+the latter across two passes: dependency/static-analysis scans (pip-audit,
+Bandit, npm audit — all clean or false-positive), a timing-attack fix in the
+API key check, closing the dashboard's previously-nonexistent authentication
+(now with brute-force lockout and session timeout), tightening CORS from a
+wide-open wildcard to an explicit allowlist, per-IP rate limiting, input
+length limits, security response headers, and a GitHub Actions workflow that
+re-runs the scans on every push — plus what was deliberately left out of
+scope (TLS, per-user credentials, full encryption at rest) and the reasoning
+for each.
 
 ## Key design decisions worth knowing before reading the code
 
