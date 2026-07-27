@@ -1,6 +1,6 @@
 # PromptGuard
 
-A Chrome extension + backend + dashboard for detecting sensitive/PII content
+MSc dissertation project. A Chrome extension + backend + dashboard for detecting sensitive/PII content
 in prompts submitted to LLM chat platforms (ChatGPT, Claude, Gemini, Copilot,
 Perplexity, DeepSeek, Grok, Mistral Le Chat), scoring the risk, tagging it
 against UK GDPR articles, and surfacing it in an audit dashboard.
