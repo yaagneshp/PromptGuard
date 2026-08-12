@@ -100,3 +100,76 @@ for each.
   separate rather than letting them compete over the same spans.
 - **GDPR article mapping is illustrative, not legal advice** (Phase 3) —
   explicitly documented as such in `backend/app/gdpr.py`.
+
+## File guide
+
+### Root
+
+| File | Purpose |
+|---|---|
+| `README.md` | This file |
+| `.gitignore` | Excludes `venv/`, `.env`, `*.db`, `node_modules/`, etc. from git |
+| `.github/workflows/security-scan.yml` | CI workflow — runs pip-audit, Bandit, and npm audit on every push/PR |
+
+### `backend/` — the FastAPI service
+
+| File | Purpose |
+|---|---|
+| `app/main.py` | The FastAPI app — endpoints, CORS, security headers, rate limiting, lifespan startup |
+| `app/models.py` | SQLAlchemy schema (users, platforms, events, detections, risk_scores, compliance_tags) |
+| `app/schemas.py` | Pydantic request/response validation, including input-length/charset limits |
+| `app/crud.py` | Database read/write operations |
+| `app/auth.py` | API key authentication (constant-time comparison) |
+| `app/config.py` | Settings loaded from `.env` |
+| `app/database.py` | DB connection setup — WAL mode, file permission hardening |
+| `app/policy.py` | Loads `policy.yaml` (risk thresholds, blocked categories, allowed platforms) |
+| `app/risk.py` | The hybrid risk-scoring formula |
+| `app/gdpr.py` | Category → UK GDPR article mapping |
+| `app/ratelimit.py` | Per-IP rate limiter configuration |
+| `app/detectors/regex_detectors.py` | The 7 regex-based PII detectors |
+| `app/detectors/presidio_detector.py` | Presidio/NER wrapper, scoped to its specific entity set |
+| `app/detectors/combined.py` | Merges regex + Presidio matches into one redaction pass |
+| `policy.yaml` | The actual policy configuration (data, not code) |
+| `requirements.txt` | Pinned Python dependencies |
+| `.env.example` | Template showing what `.env` needs (`.env` itself is gitignored) |
+| `tests/test_presidio_standalone.py` | Standalone Presidio smoke test from Phase 3 |
+
+### `extension/` — the Chrome extension
+
+| File | Purpose |
+|---|---|
+| `manifest.json` | MV3 manifest — permissions, content script registration |
+| `content-scripts/engine.js` | The generic capture engine (works across all 8 platforms) |
+| `background.js` | Service worker — generates the pseudonymous user ID, POSTs to the backend |
+| `options.html` / `.js` | Settings page (backend URL, API key) |
+| `popup.html` / `.js` | Shows the result of the last capture |
+| `tests/engine.test.js` | 13 jsdom unit tests for the capture logic |
+| `tests/background.test.js` | Integration test against the live backend |
+
+### `dashboard/` — the Streamlit app
+
+| File | Purpose |
+|---|---|
+| `app.py` | Main dashboard — Overview, Audit Log, and Trends & Compliance tabs |
+| `auth.py` | Password gate with brute-force lockout and session timeout |
+| `db.py` | Read-only SQLite connection to the backend's database |
+| `colors.py` | The fixed status/categorical colour palette used across all charts |
+| `.env.example` | Template for the dashboard password config |
+
+### `dataset/` — the Phase 5 evaluation
+
+| File | Purpose |
+|---|---|
+| `generate_dataset.py` | Builds the 368-prompt synthetic labelled dataset |
+| `prompts.jsonl` | The dataset itself |
+| `evaluate.py` | Runs both detectors against it and computes every metric behind the Evaluation chapter |
+| `build_charts.py` | Generates the 5 evaluation charts |
+| `results/` | Raw output — metrics JSON, charts, per-prompt results, `summary.md` |
+
+### `docs/` — implementation notes
+
+| File | Purpose |
+|---|---|
+| `NOTES_PHASE1.md` – `NOTES_PHASE5.md` | Phase-by-phase design rationale, bugs found, and testing evidence |
+| `NOTES_SECURITY.md` | The full two-round security review write-up |
+| `TESTING_GUIDE.md` | Manual step-by-step testing instructions, including safe placeholder PII values |
